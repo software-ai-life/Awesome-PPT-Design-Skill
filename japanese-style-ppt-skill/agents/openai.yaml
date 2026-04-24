@@ -1,0 +1,8 @@
+interface:
+  display_name: "Japanese Style PPT"
+  short_description: "Japanese editorial PPT styles"
+  brand_color: "#2C3E50"
+  default_prompt: "Use japanese-style-ppt-skill to create a Japanese editorial PPT deck."
+
+policy:
+  allow_implicit_invocation: true

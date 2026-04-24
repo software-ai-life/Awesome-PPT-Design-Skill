@@ -1,0 +1,5 @@
+interface:
+  display_name: "Soft 3D Clay PPT"
+  short_description: "Soft claymorphism PPT styling"
+  default_prompt: "Use soft-3d-clay-ppt-skill to create a soft 3D claymorphism PPT deck."
+  brand_color: "#B2AC88"
