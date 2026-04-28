@@ -2,13 +2,15 @@
 
 [繁體中文](README.md) | [English](README.en.md)
 
-> 一句 prompt，讓 Codex 依照指定美學產出可交付的高質感 PPT。
+> 一句 prompt，讓支援 skills 的 coding agent 依照指定美學產出可交付的高質感 PPT。
 
-Custom Codex skills for generating polished PowerPoint decks with [`ppt-master`](https://github.com/hugohe3/ppt-master).
+Agent-agnostic PPT design skills for generating polished PowerPoint decks with [`ppt-master`](https://github.com/hugohe3/ppt-master).
 
-這個 repo 收集一組可直接套用的 PPT design skills，重點不是「套模板」，而是讓 agent 在產製簡報時能穩定遵守一套完整的視覺語言：色彩、排版、字體、留白、封面、圖表、QA 與 PPT master 流程。
+這個 repo 是一組 PPT design skills，重點不是「套模板」，而是讓 agent 在產製簡報時能穩定遵守一套完整的視覺語言：色彩、排版、字體、留白、封面、圖表、QA 與 PPT master 流程。
 
 繁體中文友善：你可以直接用繁體中文描述需求、指定風格、要求頁數、提供 PDF，skill 會以繁中語境理解簡報敘事與視覺方向。
+
+可用於多種支援本地 skills / agent instructions 的 coding agent，例如 Codex、Claude Code、Cursor、OpenCode、OpenClaw、Hermes。不同 agent 的安裝方式可能不同。
 
 ```text
 Use japanese-style-ppt-skill and follow ppt-master to create a 5-page PPT from this PDF.
@@ -19,7 +21,7 @@ Use japanese-style-ppt-skill and follow ppt-master to create a 5-page PPT from t
 
 | Skill | Cover | Best For |
 | --- | --- | --- |
-| `japanese-style-ppt-skill` / Japanese Lifestyle Editorial | ![Japanese Lifestyle Editorial cover](japanese-style-ppt-skill/assets/examples/japanese-lifestyle-editorial/01_cover.svg) | 品牌故事、商務提案、產品敘事、具雜誌感的專業簡報 |
+| `japanese-style-ppt-skill` / Japanese Lifestyle Editorial | ![Japanese Lifestyle Editorial cover](japanese-style-ppt-skill/assets/examples/japanese-lifestyle-editorial/01_cover.svg?v=2) | 品牌故事、商務提案、產品敘事、具雜誌感的專業簡報 |
 | `japanese-style-ppt-skill` / Washi Paper & Soft Glow | ![Washi Paper & Soft Glow cover](japanese-style-ppt-skill/assets/examples/washi-soft-glow/01_cover.svg) | 人文敘事、溫度型商務簡報、品牌理念、策略故事 |
 | `soft-3d-clay-ppt-skill` | ![Soft 3D Claymorphism cover](soft-3d-clay-ppt-skill/assets/examples/01_cover.svg) | 輕盈科技簡報、友善產品說明、活潑但專業的策略簡報 |
 | `futuristic-tech-editorial-ppt-skill` | ![Futuristic Tech Editorial cover](futuristic-tech-editorial-ppt-skill/assets/examples/01_cover.svg) | AI、平台、工程、技術策略、資料導向商務簡報 |
@@ -109,7 +111,7 @@ Use japanese-style-ppt-skill and follow ppt-master to create a 5-page PPT from t
 
 ## Quick Start
 
-把需要的 skill folder 複製到 Codex skills 目錄，或放在 Codex 能讀取的 workspace 內。
+把需要的 skill folder 複製到你的 agent skills 目錄，或放在 agent 能讀取的 workspace 內。
 
 使用時直接指定 skill 名稱與 `ppt-master` 流程：
 

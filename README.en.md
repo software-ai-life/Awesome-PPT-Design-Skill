@@ -2,13 +2,15 @@
 
 [繁體中文](README.md) | [English](README.en.md)
 
-> One prompt, and Codex can generate a polished, presentation-ready PPT in a specific visual style.
+> One prompt, and any skills-aware coding agent can generate a polished, presentation-ready PPT in a specific visual style.
 
-Custom Codex skills for generating polished PowerPoint decks with [`ppt-master`](https://github.com/hugohe3/ppt-master).
+Agent-agnostic PPT design skills for generating polished PowerPoint decks with [`ppt-master`](https://github.com/hugohe3/ppt-master).
 
-This repository collects reusable PPT design skills. The goal is not to ship fixed templates, but to give agents a stable visual system to follow when creating decks: color, layout, typography, spacing, covers, charts, QA, and the PPT master workflow.
+This repository contains a set of PPT design skills I created. The goal is not to ship fixed templates, but to give agents a stable visual system to follow when creating decks: color, layout, typography, spacing, covers, charts, QA, and the PPT master workflow.
 
 Traditional Chinese is supported. You can describe requirements, choose a style, set page count, and provide PDFs in Traditional Chinese. The skills are designed to understand Chinese deck narratives and presentation context.
+
+These skills can be used with multiple coding agents that support local skills or agent instructions, including Codex, Claude Code, Cursor, OpenCode, OpenClaw, and Hermes. Installation may differ by agent.
 
 ```text
 Use japanese-style-ppt-skill and follow ppt-master to create a 5-page PPT from this PDF.
@@ -19,7 +21,7 @@ Use japanese-style-ppt-skill and follow ppt-master to create a 5-page PPT from t
 
 | Skill | Cover | Best For |
 | --- | --- | --- |
-| `japanese-style-ppt-skill` / Japanese Lifestyle Editorial | ![Japanese Lifestyle Editorial cover](japanese-style-ppt-skill/assets/examples/japanese-lifestyle-editorial/01_cover.svg) | Brand stories, business proposals, product narratives, magazine-style professional decks |
+| `japanese-style-ppt-skill` / Japanese Lifestyle Editorial | ![Japanese Lifestyle Editorial cover](japanese-style-ppt-skill/assets/examples/japanese-lifestyle-editorial/01_cover.svg?v=2) | Brand stories, business proposals, product narratives, magazine-style professional decks |
 | `japanese-style-ppt-skill` / Washi Paper & Soft Glow | ![Washi Paper & Soft Glow cover](japanese-style-ppt-skill/assets/examples/washi-soft-glow/01_cover.svg) | Human-centered storytelling, warm business decks, brand philosophy, strategic narratives |
 | `soft-3d-clay-ppt-skill` | ![Soft 3D Claymorphism cover](soft-3d-clay-ppt-skill/assets/examples/01_cover.svg) | Lightweight tech decks, friendly product explainers, lively but professional strategy decks |
 | `futuristic-tech-editorial-ppt-skill` | ![Futuristic Tech Editorial cover](futuristic-tech-editorial-ppt-skill/assets/examples/01_cover.svg) | AI, platforms, engineering, technical strategy, data-forward business decks |
@@ -109,9 +111,9 @@ Japanese hand-drawn editorial presentation style.
 
 ## Quick Start
 
-Copy the skill folders into your Codex skills directory, or keep them in a workspace Codex can read.
+Copy the skill folders into your agent's skills directory, or keep them in a workspace the agent can read.
 
-Use a prompt that names the skill and asks Codex to follow `ppt-master`:
+Use a prompt that names the skill and asks the agent to follow `ppt-master`:
 
 ```text
 Use japanese-style-ppt-skill in the Washi Paper & Soft Glow style.
