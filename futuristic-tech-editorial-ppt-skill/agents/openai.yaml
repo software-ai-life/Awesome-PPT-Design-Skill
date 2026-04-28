@@ -1,0 +1,8 @@
+name: futuristic-tech-editorial-ppt
+version: 1.0.0
+description: High-end editorial futuristic tech magazine style for PPT and PPTX slide design.
+instructions: |
+  Follow SKILL.md and the reference files in this skill directory.
+  Produce 16:9 presentation designs with white background, subtle grid, bold sans-serif hierarchy,
+  electric blue accents, graphite gray text, asymmetric composition, and flat sharp geometry.
+  Do not use shadows, gradients, glow, 3D, paper texture, or decorative blobs.

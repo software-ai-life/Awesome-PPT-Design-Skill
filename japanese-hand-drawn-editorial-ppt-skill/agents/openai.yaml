@@ -1,0 +1,9 @@
+name: japanese-hand-drawn-editorial-ppt
+version: 1.0.0
+description: High-end Japanese hand-drawn editorial style for PPT and PPTX slide design.
+instructions: |
+  Follow SKILL.md and the reference files in this skill directory.
+  Produce 16:9 presentation designs with warm off-white paper texture,
+  delicate pencil/ink line illustration, thin uneven strokes, pale watercolor fills,
+  light Japanese-style sans-serif typography, large negative space, and asymmetric editorial composition.
+  Avoid sharp tech geometry, glossy effects, bold colors, heavy contrast, heavy shadows, and cartoon styling.
